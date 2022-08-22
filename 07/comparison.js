@@ -1,0 +1,18 @@
+console.log("Comparison between 5 and '5'")
+console.log(`5 == '5': ${5 == '5'}`)
+console.log(`5 === '5': ${5 === '5'}`)
+console.log()
+
+console.log('WTF?!')
+console.log(`0 == '': ${0 == ''}`)
+console.log(`0 == '0': ${0 == '0'}`)
+console.log(`'0' == '': ${'0' == ''}`)
+console.log(`false == 'false': ${false == 'false'}`)
+console.log(`false == '0': ${false == '0'}`)
+console.log(`false == null: ${false == null}`)
+console.log(`false == undefined: ${false == undefined}`)
+console.log()
+
+console.log(`NaN check`)
+console.log(`1 * 'asd' === NaN: ${1 * 'asd' === NaN}`)
+console.log(`Number.isNaN(1 * 'asd'): ${Number.isNaN(1 * 'asd')}`)
