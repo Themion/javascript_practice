@@ -1,7 +1,4 @@
-const tryCatch = (f) => {
-    try { f(2, 5) }
-    catch(e) { console.log(`${e.name}: ${e.message}`) }
-}
+const { tryCatch } = require('../tryCatch')
 
 tryCatch(() => { console.log(add) })
 tryCatch(() => { console.log(sub) })

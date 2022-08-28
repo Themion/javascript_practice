@@ -1,3 +1,5 @@
+const { tryCatch } = require('../tryCatch')
+
 // 함수 식별자는 해당 함수 내부에서만 사용 가능
 // 실제로 함수를 사용할 때 사용하는 식별자는
 // 자바스크립트가 암묵적으로 생성한 식별자를 활용함
@@ -12,7 +14,7 @@ function foo() { console.log('foo') }
 // 함수 생성 시 실제로 작동하는 원리
 let baz = function baaz() { console.log('baz') }
 
-try { foo() } catch (e) { console.log(e.message) }
-try { bar() } catch (e) { console.log(e.message) }
-try { baz() } catch (e) { console.log(e.message) }
-try { baaz() } catch (e) { console.log(e.message) }
+tryCatch(() => foo())
+tryCatch(() => bar())
+tryCatch(() => baz())
+tryCatch(() => baaz())

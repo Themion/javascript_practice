@@ -1,6 +1,8 @@
-try { console.log('var: ' + varVariable) } catch (e) { console.error(e.message) }
-try { console.log('let: ' + letVariable) } catch (e) { console.error(e.message) }
-try { console.log('const: ' + constVariable) } catch (e) { console.error(e.message) }
+const { tryCatch } = require('../tryCatch')
+
+tryCatch(() => { console.log('var: ' + varVariable) })
+tryCatch(() => { console.log('let: ' + letVariable) })
+tryCatch(() => { console.log('const: ' + constVariable) })
 
 var varVariable = 1
 let letVariable = 2
